@@ -5,8 +5,43 @@ Workman keyboard layout originally proposed by OJ Bucao at https://workmanlayout
 
 When learning cold-turkey, try printing the included keyboard image as a desk reference.
 
-## Important design notes
+# Workman Keyboard Layout for X11 (Optimized for Vim)
 
-The original Workman-P proposal by OJ Bucao sought to reverse keys for backtick (`) and brackets ([]), however when considering the Objective-C and PHP programming languages, both make heavy use of the original, primary characters. Swapping them makes those frequent characters more work. **In this repository, only the number keys are reversed** to special characters.
+This guide will help you install the Workman keyboard layout for X11 systems using a simple command. This layout is optimized for Vim users and improves ergonomic efficiency.
 
-Some of the original key mapping files written by OJ used Colemak positions for alternate/multi/dead key configurations, therefore all the configurations proposed by OJ on his wordpress blog have been modified and bug-fixed by David Norman and hosted at http://github.com/workman-layout/Workman.
+## Installation
+
+You can install the layout by downloading the `.Xmodmap` file directly into your home directory:
+
+```bash
+wget -O ~/.Xmodmap https://raw.githubusercontent.com/twichai/Workman-for-vim/master/xmodmap/xmodmap.workman
+```
+
+Then, activate the new keyboard layout with the following command:
+
+```bash
+xmodmap ~/.Xmodmap
+```
+
+## Make It Persistent
+
+To make sure the layout is applied every time you log in, add the following line to your `.xinitrc` or `.xsession` file:
+
+```bash
+xmodmap ~/.Xmodmap
+```
+
+## Notes
+
+* This configuration is intended for X11 systems (e.g., most Linux desktops).
+* Make sure you back up your existing `.Xmodmap` if you have one.
+
+## Uninstallation
+
+If you want to revert to your previous layout, simply delete the `.Xmodmap` file or restore your backup, then run:
+
+```bash
+setxkbmap us
+```
+
+---
