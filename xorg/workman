@@ -14,8 +14,8 @@ xkb_symbols "workman" {
     key <AD03> {  [   r,  R   ] };
     key <AD04> {  [   w,  W   ] };
     key <AD05> {  [   b,  B   ] };
-    key <AD06> {  [   j,  J   ] };
-    key <AD07> {  [   f,  F   ] };
+    key <AD06> {  [   comma,    less   ] };
+    key <AD07> {  [   l,  L   ] };
     key <AD08> {  [   u,  U   ] };
     key <AD09> {  [   p,  P   ] };
     key <AD10> {  [   semicolon,  colon   ] };
@@ -36,8 +36,9 @@ xkb_symbols "workman" {
     key <AB03> {  [   m,  M   ] };
     key <AB04> {  [   c,  C   ] };
     key <AB05> {  [   v,  V   ] };
-    key <AB06> {  [   k,  K   ] };
-    key <AB07> {  [   l,  L   ] };
+    key <AB06> {  [   f,  F   ] };
+    key <AB07> {  [   j,  J   ] };
+    key <AB08> {  [   k,  K   ] };
     // End alphanumeric section
 
     key <CAPS> { [    BackSpace,       Escape,       BackSpace,        BackSpace ] };
@@ -58,8 +59,8 @@ xkb_symbols "workman-intl" {
     key <AD03> { [     r,          R,    registered,       registered ] };
     key <AD04> { [     w,          W,         aring,            Aring ] };
     key <AD05> { [     b,          B,             b,                B ] };
-    key <AD06> { [     j,          J,             j,                J ] };
-    key <AD07> { [     f,          F,             f,                F ] };
+    key <AD06> { [ comma,       less,  dead_cedilla,  dead_belowcomma ] };
+    key <AD07> { [     l,          L,        oslash,         Ooblique ] };
     key <AD08> { [     u,          U,        uacute,           Uacute ] };
     key <AD09> { [     p,          P,    odiaeresis,       Odiaeresis ] };
     key <AD10> { [ semicolon,  colon,     paragraph,           degree ] };
@@ -80,8 +81,9 @@ xkb_symbols "workman-intl" {
     key <AB03> { [     m,          M,            mu,               mu ] };
     key <AB04> { [     c,          C,     copyright,             cent ] };
     key <AB05> { [     v,          V,             v,                V ] };
-    key <AB06> { [     k,          K,            oe,               OE ] };
-    key <AB07> { [     l,          L,        oslash,         Ooblique ] };
+    key <AB06> { [     f,          F,             f,                F ] };
+    key <AB07> { [     j,          J,             j,                J ] };
+    key <AB08> { [     k,          K,            oe,               OE ] };
     // End alphanumeric section
 
     key <CAPS> { [ BackSpace, Escape,     BackSpace,        BackSpace ] };
